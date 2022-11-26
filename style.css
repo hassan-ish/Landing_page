@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+*{
+    box-sizing: border-box;
+    /* border: 1px solid limegreen; */
+}
+body {
+    font-family: 'Epilogue', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    align-items: center;
+}
+header .fs{
+    display: flex;
+}
+header .nav {
+    display: flex;
+    color: hsl(0, 0%, 41%);
+}
+.link:hover , .link1:hover , .link2:hover  {
+    color: hsl(0, 0%, 8%);
+    cursor: pointer;
+}
+header .nav>div {
+    margin-left: 40px;
+}
+header .sign button {
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.img img {
+    height: 100%;
+}
+.sign button {
+    color: hsl(0, 0%, 41%);
+    cursor: pointer;
+    font-weight: 700;
+    border-color: hsl(0, 0%, 41%);
+
+}
+.sign button:nth-child(1) {
+    margin-right: 15px;
+    border: 0;
+}
+.sign button:hover {
+    color: hsl(0, 0%, 8%);
+    border-color: hsl(0, 0%, 8%);
+}
+
+/*header End*/
+
+/*start dorp down*/
+.drop1 , .drop2{
+    position: relative;
+}
+.drop2 ul , .drop1 ul{
+    display: none;
+    position: absolute;
+    top: 20px;
+    list-style-type: none;
+    width: max-content;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow:  15px 15px 100px #cccccc,
+                -15px -0px 0px #ffffff;
+    
+}
+.drop2 ul {
+    right: -20px;
+}
+.drop1 ul {
+    right: 0;
+}
+
+.drop1 ul li , .drop2 ul li {
+    margin: 10px 0;
+}
+
+.drop1 ul li span {
+    margin-right: 5px;
+}
+
+.show {
+    display: block !important ; 
+}
+
+/*End nav page*/
+/*Main section starts*/
+.main {
+    display: flex;
+    height: calc(100vh - 90px);
+    justify-content: space-around;
+    padding: 20px;
+}
+.main div h2 {
+    font-size: 4em;
+    margin-top: 100px;
+}
+.main div > p {
+    font-size: 1em;
+    color: hsl(0, 0%, 41%);
+    margin: 50px 0;
+    font-weight: 700;
+    line-height: 25px;
+}
+.main div button {
+    color: hsl(0, 0%, 98%);
+    background-color: hsl(0, 0%, 8%);
+    font-size: 1.1em  ;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin-bottom: 65px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.main div button:hover {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 8%);
+}
+.main div .comp {
+    display: flex;
+    align-items: center;
+}
+.main div .comp img{
+    margin: 15px;
+}
+
